@@ -87,7 +87,7 @@
 }
 
 .cover__title {
-  z-index: 10; 
+  z-index: 10;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -150,5 +150,98 @@
   font-style: normal;
   text-transform: uppercase;
   background-color: transparent;
+}
+/* /Cover ----------------------------------------------------------------- */
+
+
+
+/* Cards ----------------------------------------------------------------- */
+.lots {
+  padding: 180px 24px 0;
+}
+
+.lots__heading {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 0 27px 26px;
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 600px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.card {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-image {
+  position: absolute;
+  z-index: 0;
+}
+
+.card__title {
+  padding: 50px 40px 0;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.card__title-extended {
+  word-spacing: 5px;
+}
+
+.card__text {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 0 40px 50px;
+  z-index: 2;
+}
+
+.card__text-extended {
+  min-height: 206px; /* В макете в первой карточке текст чуть выше, чем в остальных карточках можно было и паддинг увеличить для этой карточки, но решил сделать так */
+}
+
+.ellipsis {
+  letter-spacing: -1px; /* Сделал чтобы совпадало с макетом */
+}
+
+.lots__look-more-link {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 30px 0 20px 26px;
+  border-bottom: 1px solid;
+  width: max-content;
+  cursor: pointer;
 }
 
