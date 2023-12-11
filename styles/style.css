@@ -166,15 +166,15 @@
 }
 
 .lots__card-list {
-  display: flex;
-  list-style: none;  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; /* Если добавятся карточки, то они встанут в следующий ряд */
+  list-style: none;
   gap: 25px;
-  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
   min-height: 600px;
-  width: 334px;
 }
 
 .card-link {
@@ -186,6 +186,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 400px; /* Показалось, что лучше ограничить ширину карточки, чтобы при увеличении ширины страницы они сильно не растягивались (по-моему так лучше выглядит) */
   justify-content: space-between;
   height: 100%;
 }
@@ -193,6 +194,8 @@
 .card-image {
   position: absolute;
   z-index: 0;
+  height: 100%;
+
 }
 
 .card__title {
@@ -201,7 +204,9 @@
   font-weight: 700;
   line-height: 120%;
   text-decoration-line: underline;
+  text-underline-offset: 3px;
   text-transform: uppercase;
+  min-width: 334px;
   z-index: 2;
 }
 
