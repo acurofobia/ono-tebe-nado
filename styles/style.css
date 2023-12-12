@@ -280,3 +280,50 @@
 .about__text-extended {
   padding-bottom: 25px;
 }
+/* /About ----------------------------------------------------------------- */
+
+
+
+/* Footer ----------------------------------------------------------------- */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 180px 24px 90px;
+}
+
+.footer__address {
+  padding-top: 0; /* Добавил класс чтобы обнулить padding, который задавал в header */
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  list-style: none;
+}
+
+.footer__menu__link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.footer__menu__link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  height: 48px;
+}
+/* /Footer ----------------------------------------------------------------- */
