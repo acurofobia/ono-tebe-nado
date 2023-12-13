@@ -244,7 +244,7 @@
 .about__column a {
   display: block;
   height: 240px;
-  margin: 0 95px 356px;
+  margin: 0 95px;
   border-radius: 50%;
   background-color: #000;
 }
@@ -267,13 +267,10 @@
   text-transform: uppercase;
 }
 
-.about__text-container {
+.about__text {
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-
-.about__text {
   font-size: 20px;
   line-height: 115%; /* При сравнивании с pixel perfect с макетом, line-height - такой, в макете в свойствах текста line-height: normal; */
 }
